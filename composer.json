@@ -1,0 +1,9 @@
+{
+    "require": {
+        "johnpbloch/wordpress-core": "^5.7",
+        "php": "^5.6",
+        "msankhala/parsehub-php": "^2.0",
+        "nategood/httpful": "^0.2.20",
+        "monolog/monolog": "^1.26"
+    }
+}
