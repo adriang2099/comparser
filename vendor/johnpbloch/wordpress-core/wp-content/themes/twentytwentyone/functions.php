@@ -8,6 +8,13 @@
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
+ 
+// ParserHub DB connection
+function connect_another_db() {
+    global $seconddb;
+    $seconddb = new wpdb(DB_USER, DB_PASSWORD, 'parser_data', DB_HOST);
+}
+add_action('init', 'connect_another_db');
 
 // This theme requires WordPress 5.3 or later.
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
